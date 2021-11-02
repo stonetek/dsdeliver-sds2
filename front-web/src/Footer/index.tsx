@@ -8,7 +8,7 @@ import { ReactComponent as LinkedinIcon } from './linkedin.svg';
 function Footer() {
     return (
         <footer className="main-footer">
-            App desenvolvido segundo aula da DevSuperior
+            App desenvolvido por Pedro Paulo
             <div className="footer-icons" >
 
                 <a href="https;//www.youtube.com/c/DevSuperior" target="new">
