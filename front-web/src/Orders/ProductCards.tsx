@@ -22,7 +22,7 @@ function ProductCard({ product }: Props) {
             <img
                 src={product.imageUri}
                 className="order-card-image"
-                alt={product.name}
+                alt={product.imageUri}
             />
             <h3 className="order-card-price">
                 {formatPrice(product.price)}

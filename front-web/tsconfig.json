@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
+      "es6",
       "dom.iterable",
+      "ScriptHost",
+      "ES2016.Array.Include",
       "esnext"
     ],
     "allowJs": true,
