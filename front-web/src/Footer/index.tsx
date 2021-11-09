@@ -11,15 +11,15 @@ function Footer() {
             App desenvolvido por Pedro Paulo
             <div className="footer-icons" >
 
-                <a href="https;//www.youtube.com/c/DevSuperior" target="new">
+                <a href="https://www.youtube.com/c/DevSuperior" target="new">
                     <YouTubeIcon />
                 </a>
 
-                <a href="https://www.linkedin.com/school/devisuperior/" target="new">
+                <a href="https://www.linkedin.com/in/pedro-silva-36ab44127/" target="new">
                     <LinkedinIcon />
                 </a>
 
-                <a href="https://www.instagram.com/devsuperior.ig/" target="new">
+                <a href="https://www.instagram.com/pedrors99999/" target="new">
                     <InstagramIcon />
                 </a>
 
