@@ -1,9 +1,10 @@
+import { checkIsSelected } from "./helpers";
 import ProductCard from "./ProductCards";
 import { Product } from "./types";
 
 type Props = {
     products: Product[];
-    selectedProducts: (Product[]);
+    selectedProducts: Product[];
     onSelectProduct: (product: Product) => void;
 }
 
@@ -16,7 +17,7 @@ function ProductsList({ products, onSelectProduct, selectedProducts }: Props) {
                         key={product.id}
                         product={product}
                         onSelectProduct={onSelectProduct}
-                        isSelected={selectedProducts(product)}
+                        isSelected={checkIsSelected(selectedProducts, product)}
                     />
                 ))}
             </div>
