@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../api';
 import Footer from '../Footer';
-import { checkIsSelected } from './helpers';
 import OrderLocation from './OrderLocation';
 import OrderSummary from './OrderSummary';
 import ProductsList from './ProductsList';
@@ -21,8 +20,7 @@ function Orders() {
     }, []);
 
     const handleSelectProduct = (product: Product) => {
-        const isAlreadySelected = checkIsSelected(selectedProducts, product);
-
+        const isAlreadySelected = selectedProducts.some(item => item.id === product.id)
         if (isAlreadySelected) {
             const selected = selectedProducts.filter(item => item.id !== product.id);
             setSelectedProducts(selected);
